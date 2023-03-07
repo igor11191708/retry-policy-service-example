@@ -1,18 +1,20 @@
-# Example for retry service that provides policy for how often some operation should happen with the timeout limit
+# Example for retry service provides policy for how often some operation should happen with the timeout limit and delay between events
+
+The service creates sequence of the delays (nanoseconds) according to chosen strategy 
 
 There are two strategies
 - constant - constant delay between retries
 - exponential - Exponential backoff is a strategy in which you increase the delays between retries
 
 ```swift
-        /// constant delay between retries
+        /// Constant delay between retries
         case constant(
             retry : UInt = 5,
             duration: DispatchTimeInterval = .seconds(2),
             timeout: DispatchTimeInterval = .seconds(Int.max)
         )
         
-        /// Exponential backoff is a strategy in which you increase the delays between retries.
+        /// Exponential backoff is a strategy in which you increase the delays between retries
         case exponential(
             retry : UInt = 3,
             multiplier: Double = 2.0, // The power exponent
