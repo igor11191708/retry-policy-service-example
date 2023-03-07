@@ -18,6 +18,7 @@ final class ViewModel : ObservableObject{
             try? await Task.sleep(nanoseconds: delay)
             print("past delay \(delay) on step \(step)")
         }
+        print("finished")
     }
     
     func exponential() async {
