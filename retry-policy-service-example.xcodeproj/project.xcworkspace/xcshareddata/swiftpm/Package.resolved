@@ -1,4 +1,5 @@
 {
+  "originHash" : "e14c6a4e00bfe22c9878717e6a18f4c0f1ddd92f826d4d7e914fa41c20f920de",
   "pins" : [
     {
       "identity" : "retry-policy-service",
@@ -6,9 +7,9 @@
       "location" : "https://github.com/The-Igor/retry-policy-service.git",
       "state" : {
         "branch" : "main",
-        "revision" : "80c2e19d683803c4cb016228ce0e83613bed4c05"
+        "revision" : "2a6a1f057fbf77337dfc73db98bd3d538127b3e2"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
